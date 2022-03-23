@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Flowchart</title>
+</head>
+<body>
+    <script>
+        var move = prompt("Does it move? (yes/no)");
+
+        if (move === "yes") {
+            var should1 = prompt("Should it? (yes/no)");
+            if (should1 === "yes"){
+                console.log("No problem!");
+                document.write("No problem!");
+            } else if (should1 === "no"){
+                console.log("Please use some duct tape.");
+                document.write("Please use some duct tape.");
+            }else {
+                console.log("I'm sorry but I don't understand!");
+                document.write("I'm sorry but I don't understand!");
+            }
+        } else if (move === "no") {
+            var should2 = prompt("Should it? (yes/no)");
+            if (should2 === "yes"){
+                console.log("Use a can of WD-40, it should be fine.");
+                document.write("Use a can of WD-40, it should be fine.");
+            } else if (should2 === "no"){
+                console.log("No problem!");
+                document.write("No problem!");
+            }else {
+                console.log("I'm sorry I don't understand!");
+                document.write("I'm sorry I don't understand!");
+            }
+        } else {
+            console.log("You didn't answer my question! Yes or no.");
+            document.write("You didn't answer my question! Yes or no.");
+        }
+
+    </script>
+</body>
+</html>
